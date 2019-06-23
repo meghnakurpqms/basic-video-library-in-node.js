@@ -1,0 +1,19 @@
+<h2>Update a Video</h2>
+
+<form>
+    <img src="images/{{video._id}}.jpg" style = "height: 200px; width: 200px">
+    <div class="form-group">
+        <label>Title</label>		
+        <input class="form-control" ng-model="video.title"></input>
+    </div>
+    <div class="form-group">
+        <label>Genre</label>		
+        <input class="form-control" ng-model="video.genre"></input>
+    </div>
+    <div class="form-group">
+        <label>Description</label>
+        <textarea class="form-control" ng-model="video.description"></textarea>
+    </div>
+    <input type="button" class="btn btn-primary" value="Save" ng-click="save()"></input>
+    <a class="btn btn-danger" href="/#/">Cancel</a>
+</form>

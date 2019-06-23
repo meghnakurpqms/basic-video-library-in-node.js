@@ -1,0 +1,22 @@
+<head>
+	<style>
+		li {text-align: center;}
+	</style>
+</head>
+<h2>Home Page</h2>
+<p>
+    <a href="/#/add-video">Add a Video</a>
+</p>
+<ul>
+    <li ng-repeat='video in videos' style = "list-style-type: none; float: left; padding: 16px">
+        <a href = "/#/video/{{video._id}}">
+        	<img src="images/{{video._id}}.jpg" style = "height: 200px; width: 200px"><br />{{video.title}}</a>
+        <a href="/#/video/update/{{video._id}}">
+            <i class="glyphicon glyphicon-pencil"></i>
+        </a>
+    	<a href="/#/video/delete/{{video._id}}">
+            <i class="glyphicon glyphicon-remove"></i>
+        </a>
+    </li>
+    
+</ul>
